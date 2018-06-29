@@ -7,10 +7,6 @@ import javax.servlet.annotation.WebListener;
 
 /**
  * 使用@WebListener注解，实现ServletContextListener接口
- *
- * @author 单红宇(365384722)
- * @myblog http://blog.csdn.net/catoop/
- * @create 2016年1月6日
  */
 @WebListener
 public class MyServletContextListener implements ServletContextListener {
