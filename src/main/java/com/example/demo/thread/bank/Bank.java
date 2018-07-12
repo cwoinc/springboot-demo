@@ -19,17 +19,17 @@ public class Bank {
         if (accounts[from] < amount) {
             return;
         }
-        System.out.println(Thread.currentThread());
+        Thread thread = Thread.currentThread();
         accounts[from] -= amount;
-        System.out.printf("%f from %d to %d ", amount, from, to);
+        System.out.println(thread.getName() + "\t" + amount + "\tfrom " + from + " to " + to);
         accounts[to] += amount;
-        System.out.println("total:" + getTotalBalance());
+        System.out.println(thread.getName() + "\ttotal:" + getTotalBalance());
     }
     
     public double getTotalBalance() {
         double sum = 0d;
-        for (int i = 0; i < accounts.length; i++) {
-            sum += accounts[i];
+        for (double account : accounts) {
+            sum += account;
         }
         return sum;
     }
