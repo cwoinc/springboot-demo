@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    var rep = {
+        '00': '\u200b',
+        '01': '\u200c',
+        '10': '\u200d',
+        '11': '\ufeff'
+    };
+    var rep1 = {
+        '\u200b': '00',
+        '\u200c': '01',
+        '\u200d': '10',
+        '\ufeff': '11'
+    };
+    console.log('(\u200b\u200c\u200d\ufeff)');
+
+    function hide(str) {
+        return str.replace(/[\s\S]/g, function (a) {
+            a = a.charCodeAt().toString(2);
+            console.log(a.length);
+            var len = 106;
+            if (a.length < len) {
+                a = Array(len + 1 - a.length).join('0') + a;
+            }
+            return a.replace(/.{2}/g, function (a) {
+                return rep[a];
+            });
+        });
+    }
+
+    function show(str) {
+        return str.replace(/.{53}/g, function (a) {
+            return String.fromCharCode(parseInt(a.replace(/./g, function (a) {
+                return rep1[a];
+            }), 2));
+        });
+    }
+
+    var b = "Asdfhfdhdjdgjgdj";
+    console.log(b);
+    var aaa = hide(b);
+    console.log('(' + aaa + ')', aaa.length);
+    console.log(show(aaa));
+</script>
+</body>
+</html>

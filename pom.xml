@@ -43,6 +43,29 @@
             <version>2.4</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
+        <!--<dependency>-->
+            <!--<groupId>com.auth0</groupId>-->
+            <!--<artifactId>java-jwt</artifactId>-->
+            <!--<version>3.3.0</version>-->
+        <!--</dependency>-->
+
+
+        <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.0</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/com.atlassian.jwt/jwt-core -->
+        <!--<dependency>-->
+            <!--<groupId>com.atlassian.jwt</groupId>-->
+            <!--<artifactId>jwt-core</artifactId>-->
+            <!--<version>1.6.1</version>-->
+        <!--</dependency>-->
+
 
         <!-- https://mvnrepository.com/artifact/lennart/cpdetector -->
         <!--<dependency>-->

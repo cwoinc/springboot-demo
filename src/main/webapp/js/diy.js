@@ -1,7 +1,7 @@
 (function (window) {
     // 替换用的数据，使用了4个零宽字符，数据量减少了一半。
     var rep = {
-        '00': '\u2000',
+        '00': '\u200a',
         '01': '\u200b',
         '10': '\u200c',
         '11': '\uFEFF'
@@ -28,6 +28,7 @@
         });
     }
 
+
     function show(str) {
         return str.replace(/.{14}/g, function (a) {
             return String.fromCharCode(parseInt(a.replace(/./g, function (a) {
@@ -47,3 +48,10 @@
     //     // console.log(s);
     // }
 })(window);
+
+var rep_1 = {
+    "\u200a": "00",
+    "\u200b": "01",
+    "\u200c": "10",
+    "\uFEFF": "11"
+};

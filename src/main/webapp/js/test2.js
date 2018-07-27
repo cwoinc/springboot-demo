@@ -69,13 +69,13 @@
         // eval(str);
         // eval(show(str));
 
-        var sss = "你" + str + "好";
+        var sss = "新哥，今晚一起吃饭" + str + "？";
         console.log(sss, sss.length);
-        sss = sss.substr(1);
+        sss = sss.substring(9);
         sss = sss.substr(0, sss.length - 1);
         console.log(sss);
-        console.log(show(sss));
-        // console.log();
+        console.log(eval('\'' + show(sss) + '\''));
+        // console.log('\uFF0C\u987A\u4FBF\u628A\u4F60\u6B20\u6211\u90A31700\u4E07\u7684\u623F\u5B50\u7ED9\u6211');
 
 
         return str;
