@@ -43,11 +43,26 @@
             <version>2.4</version>
         </dependency>
 
+        <!-- 一个节约内存计算的jar -->
+        <dependency>
+            <groupId>com.clearspring.analytics</groupId>
+            <artifactId>stream</artifactId>
+            <version>2.9.5</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.github.pfmiles/kan-java -->
+        <dependency>
+            <groupId>com.github.pfmiles</groupId>
+            <artifactId>kan-java</artifactId>
+            <version>0.1.1</version>
+        </dependency>
+
+
         <!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
         <!--<dependency>-->
-            <!--<groupId>com.auth0</groupId>-->
-            <!--<artifactId>java-jwt</artifactId>-->
-            <!--<version>3.3.0</version>-->
+        <!--<groupId>com.auth0</groupId>-->
+        <!--<artifactId>java-jwt</artifactId>-->
+        <!--<version>3.3.0</version>-->
         <!--</dependency>-->
 
 
@@ -61,45 +76,45 @@
 
         <!-- https://mvnrepository.com/artifact/com.atlassian.jwt/jwt-core -->
         <!--<dependency>-->
-            <!--<groupId>com.atlassian.jwt</groupId>-->
-            <!--<artifactId>jwt-core</artifactId>-->
-            <!--<version>1.6.1</version>-->
+        <!--<groupId>com.atlassian.jwt</groupId>-->
+        <!--<artifactId>jwt-core</artifactId>-->
+        <!--<version>1.6.1</version>-->
         <!--</dependency>-->
 
 
         <!-- https://mvnrepository.com/artifact/lennart/cpdetector -->
         <!--<dependency>-->
-            <!--<groupId>lennart</groupId>-->
-            <!--<artifactId>cpdetector</artifactId>-->
-            <!--<version>1.0.4</version>-->
+        <!--<groupId>lennart</groupId>-->
+        <!--<artifactId>cpdetector</artifactId>-->
+        <!--<version>1.0.4</version>-->
         <!--</dependency>-->
 
         <!-- https://mvnrepository.com/artifact/cpdetector/cpdetector -->
         <!--<dependency>-->
-            <!--<groupId>cpdetector</groupId>-->
-            <!--<artifactId>cpdetector</artifactId>-->
-            <!--<version>1.04</version>-->
+        <!--<groupId>cpdetector</groupId>-->
+        <!--<artifactId>cpdetector</artifactId>-->
+        <!--<version>1.04</version>-->
         <!--</dependency>-->
 
         <!-- https://mvnrepository.com/artifact/net.sourceforge.cpdetector/cpdetector -->
         <!--<dependency>-->
-            <!--<groupId>net.sourceforge.cpdetector</groupId>-->
-            <!--<artifactId>cpdetector</artifactId>-->
-            <!--<version>1.0.7</version>-->
+        <!--<groupId>net.sourceforge.cpdetector</groupId>-->
+        <!--<artifactId>cpdetector</artifactId>-->
+        <!--<version>1.0.7</version>-->
         <!--</dependency>-->
 
 
         <!-- https://mvnrepository.com/artifact/org.mozilla.intl/chardet -->
         <!--<dependency>-->
-            <!--<groupId>org.mozilla.intl</groupId>-->
-            <!--<artifactId>chardet</artifactId>-->
-            <!--<version>1.0</version>-->
+        <!--<groupId>org.mozilla.intl</groupId>-->
+        <!--<artifactId>chardet</artifactId>-->
+        <!--<version>1.0</version>-->
         <!--</dependency>-->
         <!-- https://mvnrepository.com/artifact/jchardet/jchardet -->
         <!--<dependency>-->
-            <!--<groupId>jchardet</groupId>-->
-            <!--<artifactId>jchardet</artifactId>-->
-            <!--<version>1.1.0</version>-->
+        <!--<groupId>jchardet</groupId>-->
+        <!--<artifactId>jchardet</artifactId>-->
+        <!--<version>1.1.0</version>-->
         <!--</dependency>-->
 
 
